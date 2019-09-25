@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class SpringCloudSecurityServiceGsApplication {
-	val logger: Logger = LoggerFactory.getLogger(this::class.java.name)
+class SpringCloudSecurityServiceGsApplication(val logger: Logger) {
+//	val logger: Logger = LoggerFactory.getLogger(this::class.java.name)
 }
 
 fun main(args: Array<String>) {
