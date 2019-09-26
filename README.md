@@ -4,6 +4,14 @@ Overview
 
 ## Description
 
+### Implementation
+
+#### `@AuthenticationPrincipal`
+
+It binds a method parameter or method return value to the Authentication.getPrincipal()
+
+認証済みのセッション情報を取得
+
 ## Demo
 
 ## Features
