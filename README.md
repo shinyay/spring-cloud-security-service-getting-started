@@ -1,4 +1,4 @@
-# Name
+# Spring Cloud Security Application with OAuth2 JWT
 
 Overview
 
