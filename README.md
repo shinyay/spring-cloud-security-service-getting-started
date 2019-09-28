@@ -12,6 +12,20 @@ It binds a method parameter or method return value to the Authentication.getPrin
 
 認証済みのセッション情報を取得
 
+#### Configuring Authorization Components
+[ServerHttpSecurity](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/config/web/server/ServerHttpSecurity.html) surfaces components for customizing security behaviour
+
+|Component|ServerHttpSecurity method|Use case|
+|---------|-------------------------|--------|
+|AuthorizeExchangeSpec|.authorizeExchange()|pathMatchers, RBAC, custom Authorization|
+|HeadersSpec|.headers()|Cross Site Scriptiong, Strict Transport Security, cache-control, frame options, etc…|
+|CsrfSpec|.csrf()|setup handler and token repository|
+|ExceptionHandlingSpec|.exceptionHandling()|handler for authentication entry point and denial|
+|HttpBasicSpec|.httpBasic()|custom AuthenticationManager, authentication context config|
+|RequestCacheSpec|.requestCache()|handle saving httpRequest prior to authentication|
+|FormLoginSpec|.formLogin()|set login page, authentication behaviour on success/deny|
+|LogoutSpec|.logout()|set logout page and handler|
+
 ## Demo
 
 ## Features
