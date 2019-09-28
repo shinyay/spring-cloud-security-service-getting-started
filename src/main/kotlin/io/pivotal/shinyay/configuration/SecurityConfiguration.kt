@@ -10,7 +10,8 @@ class SecurityConfiguration {
     fun securityFilterChain(http: ServerHttpSecurity): SecurityWebFilterChain {
         http
                 .authorizeExchange()
-                .pathMatchers("/resources")
+                .pathMatchers("/resources").hasAuthority("SCOPE_resource.read")
+
 
         return http.build()
     }
