@@ -26,6 +26,14 @@ It binds a method parameter or method return value to the Authentication.getPrin
 |FormLoginSpec|.formLogin()|set login page, authentication behaviour on success/deny|
 |LogoutSpec|.logout()|set logout page and handler|
 
+##### Path Pattern
+
+- **pathMatchers()**
+  - public T pathMatchers(org.springframework.http.HttpMethod method)
+  - public T pathMatchers(java.lang.String... antPatterns)
+  - public T pathMatchers(org.springframework.http.HttpMethod method, java.lang.String... antPatterns)
+
+
 ## Demo
 
 ## Features
