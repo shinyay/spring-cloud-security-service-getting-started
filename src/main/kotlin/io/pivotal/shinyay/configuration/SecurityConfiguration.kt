@@ -8,6 +8,8 @@ class SecurityConfiguration {
 
     @Bean
     fun securityFilterChain(http: ServerHttpSecurity): SecurityWebFilterChain {
+        http
+                .authorizeExchange()
 
         return http.build()
     }
