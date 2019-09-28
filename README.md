@@ -33,6 +33,19 @@ It binds a method parameter or method return value to the Authentication.getPrin
   - public T pathMatchers(java.lang.String... antPatterns)
   - public T pathMatchers(org.springframework.http.HttpMethod method, java.lang.String... antPatterns)
 
+##### ServerHttpSecurity.AuthorizeExchangeSpec.Access
+
+|Function|Description|
+|--------|-----------|
+|access|Allows plugging in a custom authorization strategy|
+|authenticated|Require an authenticated user|
+|denyAll|Deny access for everyone|
+|hasAuthority|Require a specific authority|
+|hasRole|Require a specific role|
+|permitAll|Allow access for anyone|
+
+- hasAuthority / hasRole
+  - In the case of `hasRole`, **ROLE_** prefix is supplemented
 
 ## Demo
 
