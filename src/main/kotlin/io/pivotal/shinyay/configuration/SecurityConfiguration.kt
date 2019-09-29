@@ -12,7 +12,8 @@ class SecurityConfiguration {
                 .authorizeExchange()
                 .pathMatchers("/resources").hasAuthority("SCOPE_resource.read")
                 .anyExchange().authenticated()
-
+                .and()
+                .oauth2ResourceServer().jwt()
 
         return http.build()
     }
