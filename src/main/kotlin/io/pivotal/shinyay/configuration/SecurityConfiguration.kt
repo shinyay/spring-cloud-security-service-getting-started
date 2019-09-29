@@ -11,7 +11,7 @@ class SecurityConfiguration {
         http
                 .authorizeExchange()
                 .pathMatchers("/resources").hasAuthority("SCOPE_resource.read")
-
+                .anyExchange()
 
         return http.build()
     }
