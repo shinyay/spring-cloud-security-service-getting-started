@@ -4,7 +4,8 @@ Overview
 
 ## Description
 
-- [DockerHub: shinyay/spring-cloud-security-gateway-gs](https://cloud.docker.com/repository/docker/shinyay/spring-cloud-security-service-gs)
+- [DockerHub: shinyay/
+spring-cloud-security-service-gs](https://cloud.docker.com/repository/docker/shinyay/spring-cloud-security-service-gs)
 
 ### Implementation
 
