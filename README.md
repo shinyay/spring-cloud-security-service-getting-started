@@ -7,6 +7,8 @@ Overview
 - [DockerHub: shinyay/
 spring-cloud-security-service-gs](https://cloud.docker.com/repository/docker/shinyay/spring-cloud-security-service-gs)
 
+- [Related Gateway:spring-cloud-security-gateway-gs](https://github.com/shinyay/spring-cloud-security-gateway-getting-started)
+
 ### Implementation
 
 #### `@AuthenticationPrincipal`
